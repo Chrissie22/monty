@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * swap - adds the top two elements of the stack.
+ * swap - swaps the top two elements of the stack
  * @stack: pointer to stack
  * @line_number: line_number
 */
