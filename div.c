@@ -5,7 +5,7 @@
  * @line_number: line_number
  * Return: no return
 */
-void _div(stack_t **stack, unsigned int counter)
+void _div(stack_t **stack, unsigned int line_number)
 {
 	stack_t *h;
 	int len = 0, aux;
