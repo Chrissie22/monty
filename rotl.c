@@ -6,7 +6,7 @@
  */
 void f_rotl(stack_t **stack,  __attribute__((unused)) unsigned int line_number)
 {
-	stack_t *tmp = *head, *aux;
+	stack_t *tmp = *stack, *aux;
 
 	if (stack == NULL || (*stack)->next == NULL)
 	{
