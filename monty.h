@@ -39,6 +39,7 @@ typedef struct instruction_s
 /**
  * struct data_s - structure with program datas
  * @line_number: Current command index
+ * @size: size of stack
  * @file: Pointer to a monty file
  * @command: command line read from a monty file
  * @stack: pointer to a doubly linked list
@@ -48,6 +49,7 @@ typedef struct instruction_s
 typedef struct data_s
 {
 	unsigned int line_number;
+	int size;
 	FILE *file;
 	char *command;
 	stack_t *stack;
