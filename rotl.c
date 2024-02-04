@@ -4,7 +4,7 @@
   *@stack: pointer to a stack head
   *@line_number: line_number
  */
-void f_rotl(stack_t **stack,  __attribute__((unused)) unsigned int line_number)
+void rotl(stack_t **stack,  __attribute__((unused)) unsigned int line_number)
 {
 	stack_t *tmp = *stack, *aux;
 
