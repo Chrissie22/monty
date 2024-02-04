@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * get_command - Executes a command
+ * get_command - Executes a command.
  */
 void get_command(void)
 {
