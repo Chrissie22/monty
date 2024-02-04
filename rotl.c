@@ -4,22 +4,22 @@
   *@stack: pointer to a stack head
   *@line_number: line_number
  */
-void rotl(stack_t **stack,  __attribute__((unused)) unsigned int line_number)
+void rotl(stack_t **stack, unsigned int line_number)
 {
-	stack_t *tmp = *stack, *aux;
+	stack_t *ptr, *bottom = *stack;
 
-	if (stack == NULL || (*stack)->next == NULL)
-	{
+	(void)line_number;
+	if (*stack == NULL || data.size == 1)
 		return;
-	}
-	aux = (*stack)->next;
-	aux->prev = NULL;
-	while (tmp->next != NULL)
-	{
-		tmp = tmp->next;
-	}
-	tmp->next = *stack;
-	(*stack)->next = NULL;
-	(*stack)->prev = tmp;
-	(*stack) = aux;
+
+	ptr = *stack;
+	while (ptr->next)
+		ptr = ptr->next;
+
+	*stack = (*stack)->next;
+	(*stack)->prev = NULL;
+
+	ptr->next = bottom;
+	bottom->next = NULL;
+	bottom->prev = ptr;
 }
