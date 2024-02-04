@@ -8,7 +8,7 @@
 void pstr(stack_t **stack, unsigned int line_number)
 {
 	stack_t *h;
-	(void)counter;
+	(void)line_number;
 
 	h = *stack;
 	while (h)
